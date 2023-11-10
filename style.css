@@ -1,0 +1,91 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+  --color-darkCyan: hsl(185, 75%, 39%);
+  --color-desat-darkBlue: hsl(229, 23%, 23%);
+  --color-darkGrayishBlue: hsl(227, 10%, 46%);
+  --color-darkGray: hsl(0, 0%, 59%);
+  
+  --ff: 'Kumbh Sans', sans-serif;
+  --fw-base: 400;
+  --fw-bold: 700;
+}
+
+body {
+  font-family: --ff;
+  font-size: 1.1rem;
+  margin: 1.5rem;
+  background-color: var(--color-darkCyan);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-image: url(bg-pattern-top.svg), url(bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 48vw bottom 40vh,
+        left 45vw top 44vh;
+}
+
+.profile-card {
+  display: grid;
+  place-items: center;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.profile-pic {
+  margin-top: -50px;
+  border-radius: 50%;
+  outline: #fff 5px solid;
+}
+
+.profile {
+  padding: 2rem;
+}
+
+h1, h2 {
+  color: var(--color-desat-darkBlue);
+}
+
+p {
+  color: var(--color-darkGrayishBlue);
+  font-weight: var(--fw-base);
+}
+
+.age {
+  font-size: 1.25rem;
+  margin: 0 0.4rem;
+}
+
+.name, .age {
+  display: inline-block;
+}
+
+footer {
+  width: 100%;
+  border-top: 1px solid var(--color-darkGray);
+  padding: 1.5rem;
+  
+  display: flex;
+  justify-content: space-around;
+}
